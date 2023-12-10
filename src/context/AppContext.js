@@ -3,7 +3,7 @@ import React, { createContext, useReducer } from 'react';
 // 5. The reducer - this is used to update the state, based on the action
 export const AppReducer = (state, action) => {
     let new_expenses = [];
-    switch (action.type) {
+    switch (action.type){
         case 'ADD_QUANTITY':
             let updatedqty = false;
             state.expenses.map((expense)=>{
@@ -61,7 +61,6 @@ export const AppReducer = (state, action) => {
 
 // 1. Sets the initial state when the app loads
 const initialState = {
-    businessBudget: 960,
     expenses: [
         { id: "Marketing", name: 'Marketing', quantity: 5, unitprice: 10 },
         { id: "Finance", name: 'Finance', quantity: 30, unitprice: 10 },
@@ -93,7 +92,7 @@ state.CartValue = totalExpenses;
                 CartValue: state.CartValue,
                 dispatch,
                 Location: state.Location,
-                businessBudget: state.businessBudget,
+                businessBudget: state.BusinessBudget,
             }}
         >
             {props.children}

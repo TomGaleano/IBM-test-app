@@ -8,7 +8,6 @@ import ExpenseList from './components/ExpenseList';
 import ItemSelected from './components/ItemSelected';
 import Location from './components/Location';
 import BusinessBudget from './components/budget';
-import RemainingBudget from './components/RemainingBudget';
 
 const App = () => {
     return (
@@ -19,12 +18,7 @@ const App = () => {
                     <div className='col-sm'>
                         <BusinessBudget />
                     </div>
-                    <div className='col-sm'>
-                        <RemainingBudget />
-                    </div>
-                    <div className='col-sm'>
-                        <CartValue />
-                    </div>
+
                     <div className='col-sm'>
                         <Location />
                     </div>
